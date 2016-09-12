@@ -37,6 +37,7 @@ proto tcp-server
 port 443
 dev tun443
 status openvpn-status-443.log
+mssfix 0
 EOF
 
 [ -f udp1194.conf ] || cat >udp1194.conf <<EOF
@@ -57,6 +58,7 @@ proto udp
 port 1194
 dev tun1194
 status openvpn-status-1194.log
+mssfix 0
 EOF
 
 MY_IP_ADDR=$(curl -s http://myip.enix.org/REMOTE_ADDR)
@@ -71,6 +73,7 @@ client
 nobind
 dev tun
 redirect-gateway def1
+mssfix 0
 
 <key>
 `cat key.pem`
