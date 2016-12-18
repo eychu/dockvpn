@@ -95,3 +95,20 @@ generate a new client key each time the `serveconfig` command is
 called. The command could even take the client CN as argument, and
 another `revoke` command could be used to revoke previously issued
 keys.
+
+
+## Verified to work with ...
+
+People have successfully used this VPN server with clients such as:
+
+- OpenVPN on Linux,
+- Viscosity on OSX (#25),
+- Tunnelblick on OSX,
+- (some VPN client on Android but I can't remember which).
+
+
+## Other related/interesting projects
+
+- @besn0847/[alpinevpn](https://github.com/besn0847/alpinevpn), a smaller
+  image based on the Alpine distribution
+  
