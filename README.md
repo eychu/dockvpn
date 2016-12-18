@@ -1,5 +1,7 @@
 # OpenVPN for Docker
 
+eychu: sudo ufw allow 22
+
 Quick instructions:
 
 ```bash
